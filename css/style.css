@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: outfit;
+    background: hsl(217, 54%, 11%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: hsl(216, 50%, 16%);
+    padding: 1em;
+    border-radius: 10px;
+    width: 15em;
+}
+
+.page-image {
+    position: relative;
+}
+
+.page-image img::after {
+    position: absolute;
+    background-image: url(../images/icon-view.svg);
+    z-index: 1000;
+    color: transparent;
+    display: contents;
+}
+
+.page-image img:hover {
+    cursor: pointer;
+}
+
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 15px;
+}
+
+h1:hover {
+    cursor: pointer;
+    color: hsl(215, 51%, 70%);
+}
+
+.para {
+    color: hsl(215, 51%, 70%);
+    font-size: 13px;
+    font-weight: 400;
+    margin-top: 15px;
+    line-height: 1.6;
+}
+
+.collection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color: hsl(178, 100%, 50%);
+    margin-top: 10px;
+    flex-wrap: wrap;
+}
+
+
+.collection p {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-bottom: 15px;
+    font-size: 10px;
+}
+
+.collection::after {
+    content: '.';
+    font-size: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-top: 1px solid hsl(215, 32%, 27%);
+    margin-bottom: 10px;
+}
+.days {
+    color: hsl(215, 51%, 70%);
+}
+
+.collection span {
+   padding-left: 5px;
+}
+
+.footer {
+    display: flex;
+    font-size: 12px;
+    height: 100%;
+    align-items: center;
+    color: hsl(178, 100%, 50%);
+}
+
+.footer:hover {
+    cursor: pointer;
+    color: hsl(215, 51%, 70%);
+}
+
+.footer img {
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+
+.footer span {
+    color:  hsl(0, 0%, 100%);
+}
+
+
